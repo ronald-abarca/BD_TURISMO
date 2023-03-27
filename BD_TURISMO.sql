@@ -111,4 +111,13 @@ create table personasextras(
 	idcliente varchar(120) foreign key references cliente(idcliente)
 )
 	
+go
+create table rol_usuario(
+	id_rol varchar(64),
+	r_nombre varchar(120) default 'USER',
+	r_status int(1) default 0,
+	
+	
+	constraint pk_rol primary key(id_rol)
+)
 
